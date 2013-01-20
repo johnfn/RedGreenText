@@ -4,12 +4,12 @@ package {
 
   import flash.text.TextFormat;
 
-  public class RedText extends starling.text.TextField {
-    public function RedText(words: String) {
+  public class RedGreenText extends starling.text.TextField {
+    public function RedGreenText(words: String) {
       super(200, 200, words);
     }
     protected override function formatText(tf:flash.text.TextField, tformat:TextFormat):void {
-      for (var i = 0; i < tf.text.length; i++) {
+      for (var i:int = 0; i < tf.text.length; i++) {
         if (i % 2 == 0) {
           tformat.color = 0xff0000;
         } else {
